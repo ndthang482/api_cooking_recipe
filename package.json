@@ -1,5 +1,5 @@
 {
-  "name": "cooking_recipe",
+  "name": "cooking_recipe_server",
   "version": "1.0.0",
   "main": "index.js",
   "engines": {
