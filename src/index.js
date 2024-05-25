@@ -23,7 +23,7 @@ db.connect(err => {
   }
 });
 
-app.get('/api/recipes', (req, res) => {
+app.get('/recipes', (req, res) => {
   const query = 'SELECT * FROM recipes';
   db.query(query, (err, results) => {
     if (err) {
@@ -34,7 +34,7 @@ app.get('/api/recipes', (req, res) => {
   });
 });
 
-app.get('/api/recipes/:id', (req, res) => {
+app.get('/recipes/:id', (req, res) => {
   const { id } = req.params;
   const query = 'SELECT * FROM recipes WHERE id = ?';
   db.query(query, [id], (err, results) => {
